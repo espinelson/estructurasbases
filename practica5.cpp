@@ -23,6 +23,7 @@ class Grupo {
         void Inicializar ();
         void Leer ();
         void Imprimir ();
+        void agregar(Alumno al);
         //crear funcion sobrecupo
         //agrega alumnos al grupo que se indique
         //debe imprimir igual, usando la misma función imprimir
@@ -138,4 +139,8 @@ void Grupo::Imprimir(){
     int i;
     for(i=0; i<nA; i++)
         (A+i)->Imprimir();
+}
+void Grupo::agregar(Alumno al){
+    
+
 }
