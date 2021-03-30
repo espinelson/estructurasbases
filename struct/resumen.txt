@@ -1,0 +1,16 @@
+Cuando creamos un puntero a struct, accedemos a sus valores con el operador flechita
+->
+es lo mismo poner (*p).peso que poner p->peso
+
+Nuestros struct pueden tener punteros, supongamos que edad es un puntero a entero
+si creamos un pajaro normal
+colibri.edad es un puntero a entero, es una direccion de memoria
+*colibri.edad es el contenido de mi edad
+
+Podemos crear punteros que apunten a ese struct
+Pajaro *p, tucan;
+p=&tucan;
+
+p->peso me da el peso del tucan
+p->edad es de tipo PUNTERO, me da la direccion de la edad
+*p->edad me da el CONTENIDO de ese puntero edad
